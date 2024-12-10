@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Clase que representa un Producto
+// clase Producto
 class Producto {
     private int id;
     private String categoria;
@@ -38,14 +38,14 @@ class Producto {
     }
 }
 
-// Clase principal que maneja el catálogo de productos
+// Clase principal maneja el catalogo de productos
 public class CatalogoProductos {
     
     private List<Producto> productos; // Lista para almacenar los productos
 
     public CatalogoProductos() {
         productos = new ArrayList<>();
-        // Agregamos algunos productos de ejemplo
+        //  productos de ejemplo
         productos.add(new Producto(1, "Ropa", "Chamarra", 299.99));
         productos.add(new Producto(2, "Ropa", "Pantalón", 199.99));
         productos.add(new Producto(3, "Calzado", "Zapatillas", 499.99));
@@ -66,7 +66,7 @@ public class CatalogoProductos {
         }
     }
 
-    // Método para eliminar un producto por ID
+    // Método para eliminar
     public void eliminarProducto(int id) {
         for (int i = 0; i < productos.size(); i++) {
             if (productos.get(i).getId() == id) {
